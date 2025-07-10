@@ -1,13 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <title>Yash's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/25/25231.png">
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <body class="bg-gray-900 text-white font-sans">
+
+    <!-- Navbar -->
+    <header class="p-6 flex justify-between items-center bg-gray-800 shadow-md sticky top-0 z-50">
+      <h1 class="text-2xl font-bold text-indigo-400">Yash.dev</h1>
+      <nav>
+        <ul class="flex gap-6">
+          <li><a href="#about" class="hover:text-indigo-300">About</a></li>
+          <li><a href="#projects" class="hover:text-indigo-300">Projects</a></li>
+          <li><a href="#contact" class="hover:text-indigo-300">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="text-center py-24 px-4 bg-gradient-to-br from-indigo-600 to-purple-600">
+      <h2 class="text-4xl md:text-6xl font-extrabold mb-4">Hi, I'm Shreyansh</h2>
+      <p class="text-xl md:text-2xl mb-8">A Developer who loves clean design & code.</p>
+      <a href="#projects" class="bg-white text-black px-6 py-3 rounded-full font-bold hover:bg-gray-300 transition">View Projects</a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-20 px-6 max-w-4xl mx-auto">
+      <h3 class="text-3xl font-bold mb-4 text-indigo-400">About Me</h3>
+      <p class="text-lg leading-relaxed">
+        I'm a passionate web developer who builds beautiful, functional, and responsive websites using the latest technologies like HTML, CSS, JavaScript, and TailwindCSS. I love problem-solving and learning new things every day.
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-20 px-6 bg-gray-800">
+      <h3 class="text-3xl font-bold mb-10 text-indigo-400 text-center">Projects</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-indigo-500/50 transition">
+          <h4 class="text-xl font-bold mb-2">Chat App</h4>
+          <p>Real-time chat application with Firebase and authentication.</p>
+        </div>
+        <div class="bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-indigo-500/50 transition">
+          <h4 class="text-xl font-bold mb-2">Weather App</h4>
+          <p>Get live weather using OpenWeather API with search and dark mode.</p>
+        </div>
+        <div class="bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-indigo-500/50 transition">
+          <h4 class="text-xl font-bold mb-2">Portfolio Site</h4>
+          <p>This website you’re on right now — built with love and Tailwind CSS!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 px-6 max-w-2xl mx-auto">
+      <h3 class="text-3xl font-bold mb-4 text-indigo-400 text-center">Contact Me</h3>
+      <form class="space-y-6">
+        <input type="text" placeholder="Your Name" class="w-full p-3 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-500" required />
+        <input type="email" placeholder="Your Email" class="w-full p-3 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-500" required />
+        <textarea placeholder="Your Message" rows="4" class="w-full p-3 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-500" required></textarea>
+        <button type="submit" class="bg-indigo-600 px-6 py-3 rounded font-bold hover:bg-indigo-500 transition">Send</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-gray-800 mt-10">
+      <p>© 2025 Shreyansh. Built with ❤️ & Tailwind CSS.</p>
+    </footer>
+
   </body>
 </html>
+
